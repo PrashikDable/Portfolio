@@ -7,14 +7,17 @@ const Portfolio = () => {
     {
       id: 1,
       src: theFitClub,
+      href: "https://github.com/PrashikDable/TheFitClub",
     },
     {
       id: 2,
       src: tollCalculator,
+      href: "https://github.com/PrashikDable/TollSense-Navigator",
     },
     {
       id: 3,
       src: portf,
+      href: "https://github.com/PrashikDable/Portfolio",
     },
   ];
 
@@ -32,7 +35,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, href }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -40,12 +43,15 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a
+                  href={href}
+                  className="w-1/2 px-12 py-3 m-4 duration-200 hover:scale-105"
+                  target="_blank"
+                  // The target="_blank" attribute is used in HTML to specify that a link should open in a new browser window or tab.
+                  rel="noreferrer"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}
