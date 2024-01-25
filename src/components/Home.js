@@ -24,12 +24,11 @@ const Home = () => {
             I am a <span className="text-blue-400"> {text}</span>
           </p>
           <p className="text-gray-500 py-6 max-w-4xl">
-            I am a motivated and hardworking individual with a deep passion for
-            software development. Having recently graduated with a post-graduate
-            diploma in advanced computing, I am eager to embark on a dynamic
-            career in the field. My academic journey has equipped me with a
-            strong understanding of software development concepts, and I am now
-            seeking hands-on experience to complement my theoretical knowledge.
+            Motivated and hardworking individual with a passion for software
+            development seeks hands-on experience with a team of professionals.
+            Strong understanding of software development concepts and eagerness
+            to learn new technologies. Recent graduate with a post-graduate
+            diploma in advance computing and a passion for software development.
           </p>
 
           <div>
